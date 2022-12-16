@@ -16,26 +16,24 @@ let controls;
 let root;
 
 const MOLECULES = {
-    'Citronellol': 'citronellol.pdb',
     'Geraniol': 'geraniol.pdb',
+    'Citronellol': 'citronellol.pdb',
     'Nerol': 'nerol.pdb',
 };
 
 const params = {
-    molecule: 'citronellol.pdb'
+    molecule: 'geraniol.pdb'
 };
 
 const loader = new PDBLoader();
 const offset = new three.Vector3();
 
-// create an AudioListener and add it to the camera
-const listener = new three.AudioListener();
-
-// create a global audio source
-const sound = new three.Audio( listener );
-
-// load a sound and set it as the Audio object's buffer
-const audioLoader = new three.AudioLoader();
+// // create an AudioListener and add it to the camera
+// const listener = new three.AudioListener();
+// // create a global audio source
+// const sound = new three.Audio( listener );
+// // load a sound and set it as the Audio object's buffer
+// const audioLoader = new three.AudioLoader();
 
 
 init();
@@ -48,15 +46,15 @@ function init() {
 
     camera = new three.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 5000 );
     camera.position.z = 1000;
-    camera.add( listener );
+    // camera.add( listener );
     scene.add( camera );
 
-    audioLoader.load( 'geranio_new_v2.mp3', function( buffer ) {
-        sound.setBuffer( buffer );
-        sound.setLoop(true);
-        sound.setVolume(1.0);
-        sound.play();
-    });
+    // audioLoader.load( 'geranio_new_v2.mp3', function( buffer ) {
+    //     sound.setBuffer( buffer );
+    //     sound.setLoop(true);
+    //     sound.setVolume(1.0);
+    //     sound.play();
+    // });
 
     const light1 = new three.DirectionalLight( 0xffffff, 0.8 );
     light1.position.set( 1, 1, 1 );

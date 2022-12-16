@@ -25,19 +25,24 @@ canvas {
     background-color:white;
 }
 
-#download {
+#audioControl {
     position: absolute;
-    bottom: 4em;
+    top: 1em;
     left: 2em;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
-    color: white;
-    background-color: transparent;
-    line-height: 1em;
-    padding: .2em;
+    /* color: rgb(90, 58, 207); */
+    color: black;
+    text-transform: uppercase;
     font-weight: lighter;
+    /* width: auto; */
+    /* line-height: .5em; */
+    /* border: 2px solid rgb(196, 85, 146); */
+    /* padding: 0.5em; */
+    background-color:black;
 }
+
 
 /* #c {
     width: 100%;
@@ -58,51 +63,6 @@ canvas {
     font-size: 1em;
     line-height: .8em;
     padding: .2em; 
-}
-
-#download-oculus {
-    position: absolute; 
-    bottom: 2.5em; 
-    left: 5em;
-    background-color: rgb(11, 77, 139);
-    color: white;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    line-height: .8em;
-    padding: .2em; 
-    width: 5em;
-    border: 2px solid grey;
-}
-
-#download-windows {
-    position: absolute; 
-    bottom: 2.5em; 
-    left: 11em;
-    background-color: rgb(11, 77, 139);
-    color: white;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    line-height: .8em;
-    padding: .2em; 
-    width: 5em;
-    border: 2px solid grey;
-}
-
-#download-macos {
-    position: absolute; 
-    bottom: 2.5em; 
-    left: 17em;
-    background-color: rgb(11, 77, 139);
-    color: white;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    line-height: .8em;
-    padding: .2em; 
-    width: 5em;
-    border: 2px solid grey;
 }
 
 a.button {
