@@ -27,7 +27,7 @@ canvas {
 
 #audioControl {
     position: absolute;
-    top: 1em;
+    bottom: 1em;
     left: 2em;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
