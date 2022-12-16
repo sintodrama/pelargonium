@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+#title {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    /* color: rgb(90, 58, 207); */
+    color: black;
+    text-transform: uppercase;
+    font-weight: lighter;
+    /* width: auto; */
+    line-height: .5em;
+    /* border: 2px solid rgb(196, 85, 146); */
+    padding: 0.5em;
+    background-color:white;
+}
+
+#download {
+    position: absolute;
+    bottom: 4em;
+    left: 2em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    line-height: 1em;
+    padding: .2em;
+    font-weight: lighter;
+}
+
+/* #c {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(textures/skybox.png) no-repeat center center;
+    background-size: cover;
+} */
+
+#playButton {
+    position: absolute; 
+    top: 2.5em; 
+    right: 2em;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: .8em;
+    padding: .2em; 
+}
+
+#download-oculus {
+    position: absolute; 
+    bottom: 2.5em; 
+    left: 5em;
+    background-color: rgb(11, 77, 139);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: .8em;
+    padding: .2em; 
+    width: 5em;
+    border: 2px solid grey;
+}
+
+#download-windows {
+    position: absolute; 
+    bottom: 2.5em; 
+    left: 11em;
+    background-color: rgb(11, 77, 139);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: .8em;
+    padding: .2em; 
+    width: 5em;
+    border: 2px solid grey;
+}
+
+#download-macos {
+    position: absolute; 
+    bottom: 2.5em; 
+    left: 17em;
+    background-color: rgb(11, 77, 139);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: .8em;
+    padding: .2em; 
+    width: 5em;
+    border: 2px solid grey;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-decoration: none;
+    /* color: initial; */
+}
+
+#social-media {
+    position: absolute; 
+    bottom: 1em; 
+    right: 1.5em;
+    color: white;
+    text-align: center;
+    padding: .2em; 
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    color: white;
+  }
+  
+  .fa-youtube {
+    color: white;
+  }
+  
+  .fa-instagram {
+    color: white;
+  }
+  .fa-soundcloud {
+    color: white;
+  }
+  .fa-bandcamp {
+    color: white;
+  }
+
+  @media screen and (max-width: 800px) {
+
+    #playButton {display: none;}
+    /* #download-oculus {display: none;} */
+    /* #download-windows {display: none;} */
+    /* #download-macos {display: none;} */
+    /* #download {display: none;} */
+    #social-media {display: none;}
+
+    #download-oculus {
+        position: absolute; 
+        bottom: 2.5em; 
+        left: 2em;   
+    }
+
+    #download-windows {
+        position: absolute; 
+        bottom: 2.5em; 
+        left: 8em;  
+    }
+
+    #download-macos {
+        position: absolute; 
+        bottom: 2.5em; 
+        left: 14em;   
+    }
+
+    a.button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    #download {
+        position: absolute;
+        bottom: 5em;
+        left: 2em;
+        text-align: left;
+        line-height: 1em;
+        box-sizing: content-box;
+        width: 50%;
+    }
+
+  }
+  
