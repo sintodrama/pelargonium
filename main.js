@@ -99,7 +99,7 @@ function init() {
 
     const gui = new GUI();
 
-    gui.add( params, 'molecule', MOLECULES ).onChange( loadMolecule );
+    gui.add( params, 'molécula:', MOLECULES ).onChange( loadMolecule );
     gui.open();
 
 }
